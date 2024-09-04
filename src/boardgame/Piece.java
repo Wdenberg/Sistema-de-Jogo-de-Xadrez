@@ -21,7 +21,7 @@ public abstract  class Piece {
     public boolean possibleMove(Position position){
         return possibleMoves()[position.getRows()][position.getColumns()];
     }
-    
+
     public boolean isThereAnyPossibleMove(){
         boolean[][] mat = possibleMoves();
         for (int i = 0; i < mat.length; i++){
